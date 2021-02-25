@@ -1782,5 +1782,15 @@
      font-weight: 500;
      text-align: center;
 }
+
+
 /** slider arrow **/
+
+.service-img {
+    height: 65px;
+    width: 60px;
+    background-size: contain;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
  
