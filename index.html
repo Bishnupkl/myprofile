@@ -28,6 +28,9 @@
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+     <script src= 
+    "https://smtpjs.com/v3/smtp.js"> 
+  </script> 
     <!-- Tweaks for older IEs-->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -341,6 +344,23 @@ I offer more than 2 years of experience with Web development and a proven track 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/plugin.js"></script>
+
+  <script type="text/javascript"> 
+    function sendEmail() { 
+      // alert('here');
+      Email.send({ 
+        Host: "smtp.gmail.com", 
+        Username: "sender@email_address.com", 
+        Password: "Enter your password", 
+        To: 'bishnup212@gmail.com', 
+        From: "20nupokhrel95@gmail.com", 
+        Subject: "Sending Email using javascript", 
+        Body: "Well that was easy!!", 
+      }) 
+        .then(function (message) { 
+          alert("mail sent successfully") 
+        }); 
+    } 
 
     <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
