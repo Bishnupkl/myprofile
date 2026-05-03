@@ -149,7 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="education">
 				<h3 class="clr3">Education</h3>
 				<div class="education_details">
-					<h4>Maharishi International University <span>2024 – Present</span></h4>
+					<h4>Maharishi International University <span>2024 – 2026</span></h4>
 					<h6>Master of Science in Computer Science</h6>
 					<p class="cmpny1">Key Courses: Algorithms, Web Application Programming, Modern Web Applications, Cloud Computing.</p>
 				</div>
@@ -159,11 +159,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<p class="cmpny1">Key Courses: Object Oriented Programming, Web Application Programming, Software Engineering, Design and Analysis of Algorithm.</p>
 				</div>
 			</div>
-			<div class="copywrite">
-				<p>© 2025 Bishnu Pokhrel | Design by <a href="https://bishnupokhrel.netlify.app" target="_blank">Bishnu Pokhrel</a> </p>
-			</div>
+		<!-- ONLY this part changed -->
+    <div class="copywrite">
+        <p>© <span id="year"></span> Bishnu Pokhrel | Design by 
+        <a href="https://bishnupokhrel.netlify.app" target="_blank">Bishnu Pokhrel</a> </p>
+    </div>
 		</div>
 	</div>
 <!---->
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
